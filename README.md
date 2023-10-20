@@ -1,7 +1,5 @@
-# smartphone
-
-## configuration
-### Android
+# smartphones
+## Android
 - disable standy-by (developer options)
 - disable screen lock
 - disable adaptive brightness
@@ -11,5 +9,5 @@
 - enable do not disturb
 - enable app pinning
 
-### iOS
+## iOS
 - 
