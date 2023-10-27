@@ -1,4 +1,5 @@
 # smartphones
+
 ## Android
 - disable standy-by (developer options)
 - disable screen lock
@@ -10,4 +11,8 @@
 - enable app pinning
 
 ## iOS
+- 
+
+## Attributions
+The following software is used in this project:
 - 
