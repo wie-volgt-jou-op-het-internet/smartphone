@@ -1,7 +1,7 @@
 export function moveEyes(x, y) {
     let balls = document.getElementsByClassName('ball');
     let xPercent = Math.round(x * 100) + "%";
-    let yPercent = Math.round(y * 100) - 10 + "%";
+    let yPercent = Math.round(y * 100) + "%";
 
     for (const ball of balls) {
         ball.style.left = xPercent;
