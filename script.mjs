@@ -3,7 +3,6 @@ import {moveEyes} from "./libraries/eye.mjs";
 
 function init() {
     // Initialize the kiosk.
-    const kioskName = window.location.hash.slice(1);
     const kiosk = new Kiosk(kioskName);
 
     // Move eyes randomly.
@@ -11,7 +10,7 @@ function init() {
         moveEyes(Math.random(), Math.random());
     }, 1000);
 
-
+    // Check if the kiosk is active.
     const overlay = document.getElementById('overlay');
     const sound = document.getElementById('sound');
     setInterval(async () => {
