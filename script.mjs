@@ -7,7 +7,9 @@ function init() {
 
     // Move eyes randomly.
     setInterval(() => {
-        moveEyes(Math.random(), Math.random());
+        let x = Math.random() * 0.6;
+        let y = Math.random() * 0.6;
+        moveEyes(x, y);
     }, 1000);
 
     // Check if the kiosk is active.
@@ -21,7 +23,7 @@ function init() {
             overlay.style.opacity = '1';
             sound.muted = true;
         }
-    }, 500);
+    }, 100);
 
 }
 
