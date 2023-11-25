@@ -6,27 +6,11 @@ function init() {
     const kioskName = window.location.hash.slice(1);
     const kiosk = new Kiosk(kioskName);
 
-    // Kiosk specific changes.
-    switch (kioskName) {
-        case 'facebook':
-            initFacetracking((x, y) => moveEyes(x, y));
-            break;
-        case 'microsoft':
-            initFacetracking((x, y) => moveEyes(x, y));
-            break;
-        case 'x':
-            initFacetracking((x, y) => moveEyes(x, y));
-            break;
-        case 'google':
-            initFacetracking((x, y) => moveEyes(x, y));
-            break;
-        case 'apple':
-            initFacetracking((x, y) => moveEyes(x, y));
-            break;
-        default:
-            initFacetracking((x, y) => moveEyes(x, y));
-            break;
-    }
+    // Move eyes randomly.
+    setInterval(() => {
+        moveEyes(Math.random(), Math.random());
+    }, 1000);
+
 
     const overlay = document.getElementById('overlay');
     const sound = document.getElementById('sound');
@@ -38,7 +22,7 @@ function init() {
             overlay.style.opacity = '1';
             sound.muted = true;
         }
-    }, 1000);
+    }, 500);
 
 }
 
